@@ -1,4 +1,4 @@
-import salesTax.py
+import salesTax
 
 print("Welcome to the money app!")
 print("Please select from the following options: ")

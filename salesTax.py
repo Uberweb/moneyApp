@@ -15,10 +15,9 @@ def calculate_sales_tax(chosenState, price):
     #this function looks up the sales tax file and calculates the sales tax
     #based on the price
     if chosenState in dic:
-        print()
-    x = (chosenState/100)*price
-    salePrice = price + x
-    return salePrice
+        choosen_rate = dic[chosenState]
+        price = ((float(choosen_rate)/100)*price) + price
+    return price
 
 
 #currently only USA, eventually, we will extend globally, eg:

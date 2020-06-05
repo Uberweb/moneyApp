@@ -8,6 +8,6 @@ choice = input("What would you like to do? ")
 
 if choice == "1":
     state = input("Which state are you in? ")
-    price = input("What's the price of the item? ")
+    price = float(input("What's the price of the item? "))
     print(salesTax.calculate_sales_tax(state, price))
     total = salesTax.calculate_sales_tax(state, price)
